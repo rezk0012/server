@@ -1,0 +1,22 @@
+{
+    "name": "evboxapi",
+    "version": "0.0.0",
+    "scripts": {
+        "start": "node server"
+    },
+    "engines": {
+        "node": "12.13.0"
+    },
+    "private": true,
+    "dependencies": {
+        "@sendgrid/mail": "^6.5.3",
+        "bcrypt": "^4.0.1",
+        "express": "*",
+        "jquery": "^3.4.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.7.8",
+        "multer": "^1.4.2",
+        "nodemailer": "^6.4.3",
+        "pdfkit": "^0.11.0"
+    }
+}
