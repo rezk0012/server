@@ -83,7 +83,8 @@ router.put("/setprice", (req, res, next) => {
   Kpn.updateOne({ _id: '7' }, price)
     .then(result => {
       res.status(201).json({
-        message: "KPN Pricing updated Succesfully"
+        message: "KPN Pricing updated Succesfully", 
+        data: price
       });
     })
 
