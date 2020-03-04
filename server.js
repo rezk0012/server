@@ -6,7 +6,7 @@ const userRoutes = require("./backend/api/user");
 const stationRoutes = require("./backend/api/station");
 const emailRoutes = require("./backend/api/email");
 const kpnRoutes = require("./backend/api/kpn");
-
+const port = process.env.PORT || 3000;
 mongoose.set("useCreateIndex", true);
 mongoose
   .connect(
@@ -42,6 +42,6 @@ app.use("/api/station", stationRoutes);
 app.use("/api/email", emailRoutes);
 app.use("/api/kpn", kpnRoutes);
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("listen on port 3000");
 });
