@@ -7,7 +7,7 @@ const kpnSchema = mongoose.Schema({
     flatrate: Boolean,
     flatrateData: String,
     unit: String, 
-    flaterateDollars:String
+    flatrateDollars:String
 });
 
 module.exports = mongoose.model('Kpn', kpnSchema);
